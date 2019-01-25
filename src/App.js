@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Zoom'
 import './App.css';
-import richard from './img/Richard.jpg';
 import solarcar from './img/solarcar.png';
 import umich from './img/umich.jpg';
 import mpowered from './img/mpowered.png';
@@ -15,9 +14,8 @@ import resume from './img/resume.pdf';
 class Top extends Component {
   render() {
     return (
-      <div className="topimgbox">
-        <h1 className="left-centered"> Richard Guan </h1>
-        <img className="center-fit" src={richard} alt="Richard"></img>
+      <div className="parallax">
+          <h1 className="left-centered"> Richard Guan </h1>
       </div>
     );
   }
@@ -27,9 +25,9 @@ class Work extends Component {
   render() {
     return (
       <div>
-        <h2 className="centered top-buffer">What I've Been Doing</h2>
+        <h2 className="centered small-top-buffer top-pad">---- What I've Been Doing ----</h2>
         <div className="overall-container">
-          <Fade>
+          <Fade bottom>
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -52,7 +50,7 @@ class Work extends Component {
           </div>
           </Fade>
 
-          <Fade>
+          <Fade bottom>
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -74,7 +72,7 @@ class Work extends Component {
           </div>
           </Fade>
 
-          <Fade>
+          <Fade bottom>
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -95,7 +93,7 @@ class Work extends Component {
           </div>
           </Fade>
 
-          <Fade>
+          <Fade bottom>
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -157,7 +155,7 @@ class Projects extends Component {
               </a>
             </h3>
           </div>
-          <div className="card">
+          <div className="card extra-bottom">
             <small>November 2018</small>
             <h3>
               <span> AutoRegister </span>
