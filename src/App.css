@@ -24,15 +24,34 @@
   margin-top: 1em;
 }
 
+.top-pad {
+  padding-top: 1em;
+}
+
 .imgbox {
   position: relative;
-  margin-left: -10em;
-  padding-right: 10em;
+  display: block;
+  margin: auto;
+}
+
+.img-background {
+  background-color: #f9f8f8;
+  border-radius: 3vh;
+  height: 15vh;
+  width: 30vw;
+  display: flex;
 }
 
 .res-img {
-  width: 20vw;
-  overflow: hidden;
+  width: 21vw;
+  min-height: 1vh;
+  text-align: center;
+  overflow: auto;
+}
+
+.mpow {
+  text-align: center;
+  width: 24vw;
 }
 
 .overall-container {
@@ -45,16 +64,17 @@
 .item-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  margin: auto;
+  margin-top: 3vh;
 }
 
 .text-body {
-  margin-top: 3em;
   text-align: left;
   word-wrap: break-word;
   max-width: 50%;
+  margin-left: 3vw;
+  position: relative;
 }
 
 .center {
@@ -62,13 +82,44 @@
 }
 
 .grey {
-  background-color: #efefef;
+  background-color: #f9f9f9;
 }
 
-.footer-container {
+.dark {
+  background-color: rgb(70, 70, 70);
+}
+
+.light-txt {
+  color: rgb(199, 199, 199);
+}
+
+.card {
+  text-align: left;
+  background-color: rgb(253, 253, 253);
+  border-radius: 1vw;
+  flex-grow: 1;
+  display: inline-block;
+  max-width: 50%;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
+}
+
+.float-right {
+  float: right;
+}
+
+.footer {
+  color: rgb(109, 108, 108);
+  margin: auto;
   display: flex;
   max-width: 90%;
-  margin: auto;
+}
+
+.footer-background {
+  background-color: #f1f1f1;
 }
 
 .left-box {
@@ -89,17 +140,46 @@
   width: 2em;
   margin-right: .8em;
   margin-bottom: .5em;
+  filter: opacity(30%);
+}
+
+.linkedin:hover {
+  filter: opacity(100%);
 }
 
 .github {
   width: 2em;
   margin-bottom: .4em;
   margin-right: 1em;
+  filter: opacity(30%);
+}
+
+.github:hover {
+  filter: opacity(100%);
 }
 
 .mail {
   width: 2em;
   margin-bottom: .4em;
+  filter: opacity(30%);
+}
+
+.mail:hover {
+  filter: opacity(100%);
+}
+
+.out-link {
+  color: rgb(153, 153, 153);
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.out-link:hover {
+  color: rgb(0, 0, 0);
+}
+
+.checkout {
+  font-size: 1em;
 }
 
 .symbol-container {
@@ -121,10 +201,24 @@ h2 {
   display: block;
   font-size: 2em;
 }
-/* Why is the text only being centered when I do #footer {} and not footer {} */
 
-#footer {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+h3 {
+  display: block;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
+}
+
+b {
+  margin-top: 1em;
+  display: block;
+  font-weight: 600;
 }
