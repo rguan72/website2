@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Personal notes
-structure.txt
+*.txt

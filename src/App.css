@@ -31,7 +31,7 @@
 }
 
 .res-img {
-  width: 20em;
+  width: 20vw;
   overflow: hidden;
 }
 
@@ -67,7 +67,7 @@
 
 .footer-container {
   display: flex;
-  max-width: 50%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -75,12 +75,35 @@
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0%;
+  justify-content: space-between;
 }
 
 .right-box {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0%;
+  text-align: right;
+}
+
+.linkedin {
+  width: 2em;
+  margin-right: .8em;
+  margin-bottom: .5em;
+}
+
+.github {
+  width: 2em;
+  margin-bottom: .4em;
+  margin-right: 1em;
+}
+
+.mail {
+  width: 2em;
+  margin-bottom: .4em;
+}
+
+.symbol-container {
+  display: inline-block;
   text-align: right;
 }
 
