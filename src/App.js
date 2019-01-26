@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Fade from 'react-reveal/Zoom'
+import ScrollAnimation from 'react-animate-on-scroll'
 import './App.css';
+import 'animate.css/animate.min.css'
 import solarcar from './img/solarcar.png';
 import umich from './img/umich.jpg';
 import mpowered from './img/mpowered.png';
@@ -15,7 +16,7 @@ class Top extends Component {
   render() {
     return (
       <div className="parallax">
-          <h1 className="left-centered"> Richard Guan </h1>
+          <h1 className="left-centered"> I'm Richard Guan </h1>
       </div>
     );
   }
@@ -27,7 +28,11 @@ class Work extends Component {
       <div>
         <h2 className="centered small-top-buffer top-pad">---- What I've Been Doing ----</h2>
         <div className="overall-container">
-          <Fade bottom>
+
+          <ScrollAnimation
+            animateIn="fadeIn"
+            animateOnce={true}
+          >
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -48,9 +53,12 @@ class Work extends Component {
               </div>
             </div>
           </div>
-          </Fade>
+          </ScrollAnimation>
 
-          <Fade bottom>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            animateOnce={true}
+          >
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -70,9 +78,12 @@ class Work extends Component {
                 </p>
             </div>
           </div>
-          </Fade>
+          </ScrollAnimation>
 
-          <Fade bottom>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            animateOnce={true}
+          >
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -91,9 +102,12 @@ class Work extends Component {
                 </p>
             </div>
           </div>
-          </Fade>
+          </ScrollAnimation>
 
-          <Fade bottom>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            animateOnce={true}
+          >
           <div className="item-container">
             <div className="img-background">
               <div className="imgbox">
@@ -117,7 +131,8 @@ class Work extends Component {
               </div>
             </div>
           </div>
-          </Fade>
+          </ScrollAnimation>
+
         </div>
       </div>
     );
@@ -141,7 +156,7 @@ class Projects extends Component {
                   <img src={github} className="github" alt="Repo"></img>
                 </a>
               </span>
-              <p>
+              <p className="proj">
                 It takes a long time to manually enter everything from fliers into
                 computer vision. SnapCal streamlines this process by using
                 the Google Cloud Vision API to extract text from fliers and add
@@ -164,7 +179,7 @@ class Projects extends Component {
                   <img src={github} className="github" alt="Repo"></img>
                 </a>
               </span>
-              <p>
+              <p className="proj">
                 Getting into all the classes you want is hard at UMich. To make it much
                 faster to register for classes, here is a Python Selenium script that
                 opens Wolverine Access and registers for your selected classes
