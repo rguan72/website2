@@ -26,7 +26,7 @@ class Work extends Component {
   render() {
     return (
       <div>
-        <h2 className="centered small-top-buffer top-pad">---- What I've Been Doing ----</h2>
+        <h2 className="centered small-top-buffer top-pad"> What I've Been Doing </h2>
         <div className="overall-container">
 
           <ScrollAnimation
@@ -47,8 +47,12 @@ class Work extends Component {
               <div className="item-text">
                 <p> Ann Arbor, MI </p>
                 <p>
-                  I do cool stuff here! More filler words you know this
-                  should fix some of the alignment problems
+                  I'm a CS major and Mathematics minor at the University of Michigan.
+                  I last semester, I took Intro to Programming (ENGR 151), Linear Algebra (Math 214),
+                  and Physics. This semester, I'm taking an intro engineering course (ENGR 100),
+                  Programming and Data Structures (EECS 280), Intro to Combinatorics (Math 465),
+                  and Calc 3 (Math 215). Next semester, I will take Data Structures and
+                  Algorithms (EECS 281).
                 </p>
               </div>
             </div>
@@ -72,9 +76,10 @@ class Work extends Component {
               </div>
                 <p> Ann Arbor, MI </p>
                 <p>
-                  I do cool stuff here! Yo yo yo filler. What if this really
-                  long y'know that could cause problems djsfakljdslfjlsdajfds
-                  sdfjkaldsjf;lkasddsafasdf
+                  As a member of the Software Infrastructure and Strategy team on Solar Car,
+                  I added features to a Django-based web training team strategists for the World Solar Challenge.
+                  Since my best language is Python, my focus was on the back end,
+                  although I also spent a considerable amount of time on the front end (Javascript, HTML/CSS).
                 </p>
             </div>
           </div>
@@ -97,8 +102,9 @@ class Work extends Component {
               </div>
                 <p> Ann Arbor, MI </p>
                 <p>
-                  I do cool stuff here! Yo yo yo yo filler. What if this is
-                  really long y'know that could cause problems
+                  I am on the Startup High School team on MPowered; we are organizing
+                  a pitch competition held on UMich campus (Ross School of Business)
+                  for high schoolers. My focus is on getting sponsors for the event.
                 </p>
             </div>
           </div>
@@ -122,11 +128,9 @@ class Work extends Component {
               <div className="item-text">
                 <p> Ann Arbor, MI </p>
                 <p>
-                  I do cool stuff here! As long as this is one line the alignment
-                  should be fine. djskafljklsadjfkljaskldjfklasjdlkfjksldajflas
-                  sadjfklasdjklfjklsdajfkljsdaklfjklasjdklf;jla;sdkjlf;j;ksdaf
-                  sdfjaskdlfjklads. Even if it is really long though it should
-                  be fine.
+                  I am a Business Analyst for 180 Degree Consulting at Michigan.
+                  I'm very excited to develop the business skills I will need to
+                  launch my own tech startup!
                 </p>
               </div>
             </div>
@@ -147,6 +151,7 @@ class Projects extends Component {
           What I've Done in My Spare Time
         </h2>
         <div className="overall-container">
+
           <div className="card">
             <small>Fall 2018 - Present</small>
             <h3>
@@ -170,6 +175,7 @@ class Projects extends Component {
               </a>
             </h3>
           </div>
+
           <div className="card extra-bottom">
             <small>November 2018</small>
             <h3>
@@ -190,6 +196,7 @@ class Projects extends Component {
               </b>
             </h3>
           </div>
+
         </div>
       </div>
     );

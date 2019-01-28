@@ -97,6 +97,7 @@
   max-width: 50%;
   margin-left: 3vw;
   position: relative;
+  padding-right: .5vw;
 }
 
 .center {
