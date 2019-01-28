@@ -3,7 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import './App.css';
 import 'animate.css/animate.min.css'
 import solarcar from './img/solarcar.png';
-import umich from './img/umich.jpg';
+import umich from './img/umich.png';
 import mpowered from './img/mpowered.png';
 import one80DC from './img/180DC.png';
 import envelope from './img/envelope.png';

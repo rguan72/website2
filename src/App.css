@@ -60,18 +60,18 @@
   height: 15vh;
   width: 30vw;
   display: flex;
+  text-align: center;
 }
 
 .res-img {
-  width: 21vw;
+  width: 65%;
   min-height: 1vh;
-  text-align: center;
   overflow: auto;
 }
 
 .mpow {
   text-align: center;
-  width: 24vw;
+  width: 80%;
 }
 
 .overall-container {
@@ -259,4 +259,31 @@ b {
   margin-top: 1em;
   display: block;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 950px) {
+  .left-centered {
+    top: 75%;
+    left: 60%;
+    text-align: center;
+    font-size: 6em;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+  }
+
+  .item-container {
+      justify-content: center;
+  }
+
+  .text-body {
+    max-width: 90%;
+  }
+
+  .img-background {
+    width: 90vw;
+  }
+
+  .card {
+    max-width: 90%;
+  }
 }
