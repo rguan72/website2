@@ -40,9 +40,9 @@ class Work extends Component {
               </div>
             </div>
             <div className="text-body">
-              <p> University of Michigan '22 </p>
+              <p className="green"> <strong> University of Michigan '22 </strong> </p>
               <div className="subtitle">
-                <strong> Computer Science Major, <em> Fall 2018 - Present </em></strong>
+                <strong> Computer Science Major, <em> Fall 2018 - Present </em> </strong>
               </div>
               <div className="item-text">
                 <p> Ann Arbor, MI </p>
@@ -64,13 +64,13 @@ class Work extends Component {
             animateOnce={true}
           >
           <div className="item-container">
-            <div className="img-background">
+            <a href="https://www.solarcar.engin.umich.edu/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="res-img" src={solarcar} alt="Solar Car"></img>
               </div>
-            </div>
+            </a>
             <div className="text-body">
-              <p> Software/Strategy Team </p>
+              <p className="green"> <strong> Software/Strategy Team </strong> </p>
               <div className="subtitle">
                 <strong> University of Michigan Solar Car Team, <em> Fall 2018 - Present </em></strong>
               </div>
@@ -90,13 +90,13 @@ class Work extends Component {
             animateOnce={true}
           >
           <div className="item-container">
-            <div className="img-background">
+            <a href="https://mpowered.umich.edu/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="mpow" src={mpowered} alt="MPowered"></img>
               </div>
-            </div>
+            </a>
             <div className="text-body">
-              <p> MPowered Entrepreneurship </p>
+              <p className="green"> <strong> MPowered Entrepreneurship </strong> </p>
               <div className="subtitle">
                 <strong> Startup High School Project, <em>Fall 2018 - Present</em></strong>
               </div>
@@ -115,15 +115,15 @@ class Work extends Component {
             animateOnce={true}
           >
           <div className="item-container">
-            <div className="img-background">
+            <a href="https://www.180dcmichigan.com/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="res-img" src={one80DC} alt="180 Degree"></img>
               </div>
-            </div>
+            </a>
             <div className="text-body">
-              <p> 180 Degree Consulting </p>
+              <p className="green"> <strong> 180 Degree Consulting </strong> </p>
               <div className="subtitle">
-                <strong> Startup High School Project, <em>Fall 2018 - Present</em></strong>
+                <strong> Business Analyst, <em>Winter 2018 - Present</em></strong>
               </div>
               <div className="item-text">
                 <p> Ann Arbor, MI </p>
@@ -146,8 +146,8 @@ class Work extends Component {
 class Projects extends Component {
   render() {
     return (
-      <div className="dark">
-        <h2 className="centered top-pad top-buffer light-txt">
+      <div className="gray-green">
+        <h2 className="centered top-pad top-buffer green">
           What I've Done in My Spare Time
         </h2>
         <div className="overall-container">
@@ -168,9 +168,9 @@ class Projects extends Component {
                 them to your Google Calendar.
               </p>
               <b>
-                Web app and soon to be Mobile app calendar widget.
+                Web app calendar widget (soon to be mobile app).
               </b>
-              <a href="https://snapcal.richardguan.me/" className="out-link checkout" target="_blank" rel="noopener noreferrer">
+              <a href="https://snapcal.richardguan.me/" className="out-link-1 checkout" target="_blank" rel="noopener noreferrer">
                 Check Out
               </a>
             </h3>
@@ -196,7 +196,6 @@ class Projects extends Component {
               </b>
             </h3>
           </div>
-
         </div>
       </div>
     );
@@ -209,7 +208,9 @@ class Footer extends Component {
       <div className="footer-background">
         <footer className="footer">
           <div className="left-box">
-            <h2> Connect </h2>
+            <div className="connect">
+              <strong>  <small> Connect </small> </strong>
+            </div>
             <div className="symbol-container">
               <a href="https://linkedin.com/in/richard-g-403534124/" target="_blank" rel="noopener noreferrer">
                 <img src={linkedin} alt="" className="linkedin"></img>
@@ -224,10 +225,11 @@ class Footer extends Component {
             </div>
           </div>
           <div className="right-box">
-            <h2> More </h2>
-            <a className="out-link" href={resume} target="_blank" rel="noopener noreferrer">
-              <strong>Resume</strong>
-            </a>
+            <h4>
+              <a className="out-link-2" href={resume} target="_blank" rel="noopener noreferrer">
+                <strong>Resume</strong>
+              </a>
+            </h4>
           </div>
         </footer>
       </div>
