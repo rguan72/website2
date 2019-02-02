@@ -26,7 +26,9 @@ class Work extends Component {
   render() {
     return (
       <div>
-        <h2 className="centered small-top-buffer top-pad"> What I've Been Doing </h2>
+        <h2 className="centered small-top-buffer top-pad line">
+          What I've Been Doing
+        </h2>
         <div className="overall-container">
 
           <ScrollAnimation
@@ -147,7 +149,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="gray-green">
-        <h2 className="centered top-pad top-buffer green">
+        <h2 className="centered top-pad top-buffer green line-green">
           What I've Done in My Spare Time
         </h2>
         <div className="overall-container">

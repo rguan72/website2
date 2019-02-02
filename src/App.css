@@ -37,12 +37,21 @@
   text-align: center;
 }
 
+.line:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 7vw;
+  padding-bottom: 1.5vh;
+  border-bottom: 2px solid black;
+}
+
 .top-buffer {
-  margin-top: 2em;
+  margin-top: 8.25vh;
 }
 
 .small-top-buffer {
-  margin-top: 1em;
+  margin-top: 3vh;
 }
 
 .top-pad {
@@ -54,10 +63,6 @@
   display: block;
   margin: auto;
 }
-
-/* .imgbox:hover {
-  filter: opacity(20%);
-} */
 
 .img-background {
   background-color: #f9f8f8;
@@ -126,8 +131,14 @@
   background-color: #e5ece5cc;
 }
 
-/* Make all greens #009933 */
-
+.line-green:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 7vw;
+  padding-bottom: 1.5vh;
+  border-bottom: 2px solid #009933;
+}
 .underline {
   text-decoration: underline;
 }
@@ -143,7 +154,7 @@
 .card {
   text-align: left;
   background-color: rgb(253, 253, 253);
-  border-radius: 1vw;
+  border-radius: 3vh;
   flex-grow: 1;
   display: inline-block;
   max-width: 50%;
