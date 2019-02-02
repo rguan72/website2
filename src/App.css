@@ -11,12 +11,13 @@
 
 
 .parallax {
-  background-image: url("./img/Richard.jpg");
+  background-image: linear-gradient(to left, rgb(255, 255, 255, 0), rgb(255, 255, 255, .2)), url("./img/Richard.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .center-fit {
@@ -65,6 +66,7 @@
   width: 24vw;
   display: flex;
   text-align: center;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 
 .img-background:hover {
@@ -148,6 +150,7 @@
   padding: 3vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 
 .proj {
@@ -304,10 +307,8 @@ b {
   .left-centered {
     top: 75%;
     left: 60%;
-    text-align: center;
+    text-align: left;
     font-size: 6em;
-    color: white;
-    text-shadow: 2px 2px rgb(0, 0, 0);
   }
 
   .item-container {

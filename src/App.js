@@ -15,9 +15,9 @@ import resume from './img/resume.pdf';
 class Top extends Component {
   render() {
     return (
-      <div className="parallax">
-          <h1 className="left-centered"> I'm Richard Guan </h1>
-      </div>
+        <div className="parallax">
+            <h1 className="left-centered"> Richard Guan </h1>
+        </div>
     );
   }
 }
@@ -34,13 +34,13 @@ class Work extends Component {
             animateOnce={true}
           >
           <div className="item-container">
-            <div className="img-background">
+            <a href="https://umich.edu/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="res-img" src={umich} alt="Michigan"></img>
               </div>
-            </div>
+            </a>
             <div className="text-body">
-              <p className="green"> <strong> University of Michigan '22 </strong> </p>
+              <p className="green"> <strong> University of Michigan '21 </strong> </p>
               <div className="subtitle">
                 <strong> Computer Science Major, <em> Fall 2018 - Present </em> </strong>
               </div>
