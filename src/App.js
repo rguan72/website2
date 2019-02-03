@@ -26,21 +26,26 @@ class Work extends Component {
   render() {
     return (
       <div>
-        <h2 className="centered small-top-buffer top-pad line">
+        <h2 className="centered small-top-buffer top-pad line side-padding">
           What I've Been Doing
         </h2>
         <div className="overall-container">
 
-          <ScrollAnimation
-            animateIn="fadeIn"
-            animateOnce={true}
-          >
           <div className="item-container">
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <a href="https://umich.edu/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="big-m" src={umich} alt="Michigan"></img>
               </div>
             </a>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <div className="text-body">
               <p className="green"> <strong> University of Michigan '21 </strong> </p>
               <div className="subtitle">
@@ -58,19 +63,24 @@ class Work extends Component {
                 </p>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
-          </ScrollAnimation>
 
-          <ScrollAnimation
-            animateIn="fadeIn"
-            animateOnce={true}
-          >
           <div className="item-container">
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <a href="https://www.solarcar.engin.umich.edu/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="res-img" src={solarcar} alt="Solar Car"></img>
               </div>
             </a>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <div className="text-body">
               <p className="green"> <strong> Software/Strategy Team </strong> </p>
               <div className="subtitle">
@@ -84,19 +94,24 @@ class Work extends Component {
                   although I also spent a considerable amount of time on the front end (Javascript, HTML/CSS).
                 </p>
             </div>
+            </ScrollAnimation>
           </div>
-          </ScrollAnimation>
 
-          <ScrollAnimation
-            animateIn="fadeIn"
-            animateOnce={true}
-          >
           <div className="item-container">
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <a href="https://mpowered.umich.edu/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="mpow" src={mpowered} alt="MPowered"></img>
               </div>
             </a>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <div className="text-body">
               <p className="green"> <strong> MPowered Entrepreneurship </strong> </p>
               <div className="subtitle">
@@ -109,19 +124,24 @@ class Work extends Component {
                   for high schoolers. My focus is on getting sponsors for the event.
                 </p>
             </div>
+            </ScrollAnimation>
           </div>
-          </ScrollAnimation>
 
-          <ScrollAnimation
-            animateIn="fadeIn"
-            animateOnce={true}
-          >
           <div className="item-container">
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <a href="https://www.180dcmichigan.com/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
                 <img className="one80" src={one80DC} alt="180 Degree"></img>
               </div>
             </a>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
             <div className="text-body">
               <p className="green"> <strong> 180 Degree Consulting </strong> </p>
               <div className="subtitle">
@@ -136,8 +156,8 @@ class Work extends Component {
                 </p>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
-          </ScrollAnimation>
 
         </div>
       </div>
@@ -149,7 +169,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="gray-green">
-        <h2 className="centered top-pad top-buffer green line-green">
+        <h2 className="centered top-pad top-buffer green line-green side-padding">
           What I've Done in My Spare Time
         </h2>
         <div className="overall-container">
@@ -170,7 +190,7 @@ class Projects extends Component {
                 them to your Google Calendar.
               </p>
               <b>
-                Web app calendar widget (soon to be mobile app).
+                Calendar widget web app (soon to be mobile app).
               </b>
               <a href="https://snapcal.richardguan.me/" className="out-link-1 checkout" target="_blank" rel="noopener noreferrer">
                 Check Out
