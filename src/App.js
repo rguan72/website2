@@ -38,7 +38,7 @@ class Work extends Component {
           <div className="item-container">
             <a href="https://umich.edu/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
-                <img className="res-img" src={umich} alt="Michigan"></img>
+                <img className="big-m" src={umich} alt="Michigan"></img>
               </div>
             </a>
             <div className="text-body">
@@ -119,7 +119,7 @@ class Work extends Component {
           <div className="item-container">
             <a href="https://www.180dcmichigan.com/" target="_blank" rel="noopener noreferrer" className="img-background">
               <div className="imgbox">
-                <img className="res-img" src={one80DC} alt="180 Degree"></img>
+                <img className="one80" src={one80DC} alt="180 Degree"></img>
               </div>
             </a>
             <div className="text-body">
