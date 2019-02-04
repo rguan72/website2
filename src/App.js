@@ -93,7 +93,7 @@ class Work extends Component {
                   Since my best language is Python, my focus was on the back end,
                   although I also spent a considerable amount of time on the front end (Javascript, HTML/CSS).
                   Using Electron, I am also making a desktop app with Javascript/HTML/CSS to display solar car
-                  telemetry in the clearest way possible. 
+                  telemetry in the clearest way possible.
                 </p>
             </div>
             </ScrollAnimation>
@@ -201,6 +201,27 @@ class Projects extends Component {
           </div>
 
           <div className="card">
+            <small>November 2018</small>
+            <h3>
+              <span> AutoRegister </span>
+              <span className="float-right">
+                <a href="https://github.com/rguan72/AutoRegister" target="_blank" rel="noopener noreferrer">
+                  <img src={github} className="github" alt="Repo"></img>
+                </a>
+              </span>
+              <p className="proj">
+                Getting into all the classes you want is hard at UMich. To make it much
+                faster to register for classes, here is a Python Selenium script that
+                opens Wolverine Access and registers for your selected classes
+                the moment registration opens for you.
+              </p>
+              <b>
+                Python script automating class registration with Selenium.
+              </b>
+            </h3>
+          </div>
+
+          <div className="card extra-bottom">
             <small>October 2018 </small>
             <h3>
               <span> Laser Tag </span>
@@ -222,26 +243,6 @@ class Projects extends Component {
             </h3>
           </div>
 
-          <div className="card extra-bottom">
-            <small>November 2018</small>
-            <h3>
-              <span> AutoRegister </span>
-              <span className="float-right">
-                <a href="https://github.com/rguan72/AutoRegister" target="_blank" rel="noopener noreferrer">
-                  <img src={github} className="github" alt="Repo"></img>
-                </a>
-              </span>
-              <p className="proj">
-                Getting into all the classes you want is hard at UMich. To make it much
-                faster to register for classes, here is a Python Selenium script that
-                opens Wolverine Access and registers for your selected classes
-                the moment registration opens for you.
-              </p>
-              <b>
-                Python script automating class registration with Selenium.
-              </b>
-            </h3>
-          </div>
         </div>
       </div>
     );
