@@ -92,6 +92,8 @@ class Work extends Component {
                   I added features to a Django-based web training team strategists for the World Solar Challenge.
                   Since my best language is Python, my focus was on the back end,
                   although I also spent a considerable amount of time on the front end (Javascript, HTML/CSS).
+                  Using Electron, I am also making a desktop app with Javascript/HTML/CSS to display solar car
+                  telemetry in the clearest way possible. 
                 </p>
             </div>
             </ScrollAnimation>
@@ -175,7 +177,7 @@ class Projects extends Component {
         <div className="overall-container">
 
           <div className="card">
-            <small>Fall 2018 - Present</small>
+            <small>September 2018 - Present</small>
             <h3>
               <span> SnapCal </span>
               <span className="float-right">
@@ -195,6 +197,28 @@ class Projects extends Component {
               <a href="https://snapcal.richardguan.me/" className="out-link-1 checkout" target="_blank" rel="noopener noreferrer">
                 Check Out
               </a>
+            </h3>
+          </div>
+
+          <div className="card">
+            <small>October 2018 </small>
+            <h3>
+              <span> Laser Tag </span>
+              <span className="float-right">
+                <a href="https://github.com/rguan72/Laser-Tag" target="_blank" rel="noopener noreferrer">
+                  <img src={github} className="github" alt="Repo"></img>
+                </a>
+              </span>
+              <p className="proj">
+                For MHacks 11, I made an Android game using OpenCV, Java and Android Studio that
+                is laser tag in real life. Two players try to point their selfie
+                cameras at each others' screens to shoot each other in the game. On my team,
+                I used OpenCV to allow phones to recognize when they were pointing at
+                the opposing players' screen.
+              </p>
+              <b>
+                Android app made in Java.
+              </b>
             </h3>
           </div>
 
