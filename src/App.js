@@ -10,6 +10,7 @@ import envelope from './img/envelope.png';
 import linkedin from './img/linkedin.png';
 import github from './img/github.png';
 import resume from './img/resume.pdf';
+import croma from './img/croma.png';
 
 
 class Top extends Component {
@@ -49,19 +50,47 @@ class Work extends Component {
             <div className="text-body">
               <p className="green"> <strong> University of Michigan '21 </strong> </p>
               <div className="subtitle">
-                <strong> Computer Science Major, <em> Fall 2018 - Present </em> </strong>
+                <strong> Computer Science Major, <em> September 2018 - Present </em> </strong>
               </div>
               <div className="item-text">
                 <p> Ann Arbor, MI </p>
                 <p>
                   I'm a CS major and Mathematics minor at the University of Michigan.
-                  I last semester, I took Intro to Programming (ENGR 151), Linear Algebra (Math 214),
-                  and Physics. This semester, I'm taking an intro engineering course (ENGR 100),
-                  Programming and Data Structures (EECS 280), Intro to Combinatorics (Math 465),
-                  and Calc 3 (Math 215). Next semester, I will take Data Structures and
-                  Algorithms (EECS 281).
+                  At Michigan, I am surrounded by hard-working and entrepreneurially
+                  minded peers who are teaching me how to hustle and learn efficiently. My Math 465
+                  and EECS 280 professors have both inspired me.
                 </p>
               </div>
+            </div>
+            </ScrollAnimation>
+          </div>
+
+          <div className="item-container">
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
+            <a href="http://web.eecs.umich.edu/~wlasecki/croma.html" target="_blank" rel="noopener noreferrer" className="img-background">
+              <div className="imgbox">
+                <img className="res-img img-85" src={croma} alt="CRO+MA Lab"></img>
+              </div>
+            </a>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
+            <div className="text-body">
+              <p className="green"> <strong> Undergraduate Researcher </strong> </p>
+              <div className="subtitle">
+                <strong> Crowds and Machine Learning Lab, <em> April 2018 - Present </em></strong>
+              </div>
+                <p> Ann Arbor, MI </p>
+                <p>
+                  As a member of the CRO+MA lab, I am part of the DevEdu team;
+                  we are building tools to better educate software developers.
+                  My role is to develop the backend with Node.js and Express.js.
+                </p>
             </div>
             </ScrollAnimation>
           </div>
@@ -84,7 +113,7 @@ class Work extends Component {
             <div className="text-body">
               <p className="green"> <strong> Software/Strategy Team </strong> </p>
               <div className="subtitle">
-                <strong> University of Michigan Solar Car Team, <em> Fall 2018 - Present </em></strong>
+                <strong> University of Michigan Solar Car Team, <em> September 2018 - Present </em></strong>
               </div>
                 <p> Ann Arbor, MI </p>
                 <p>
@@ -95,6 +124,40 @@ class Work extends Component {
                   Using Electron, I am also making a desktop app with Javascript/HTML/CSS to display solar car
                   telemetry in the clearest way possible.
                 </p>
+            </div>
+            </ScrollAnimation>
+          </div>
+
+          <div className="item-container">
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
+            <a href="https://www.180dcmichigan.com/" target="_blank" rel="noopener noreferrer" className="img-background">
+              <div className="imgbox">
+                <img className="one80" src={one80DC} alt="180 Degree"></img>
+              </div>
+            </a>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
+            <div className="text-body">
+              <p className="green"> <strong> 180 Degrees Consulting </strong> </p>
+              <div className="subtitle">
+                <strong> Business Analyst, <em>January 2018 - Present</em></strong>
+              </div>
+              <div className="item-text">
+                <p> Ann Arbor, MI </p>
+                <p>
+                  I am a Business Analyst for 180 Degree Consulting at Michigan.
+                  My first project was to improve user retention on Kiva's experimental
+                  crowdvet platform. Researching UI/UX, I provided a wireframe of
+                  a redesigned platform in Adobe XD. I'm very excited to develop the business skills I will need to
+                  launch my own tech startup!
+                </p>
+              </div>
             </div>
             </ScrollAnimation>
           </div>
@@ -117,46 +180,14 @@ class Work extends Component {
             <div className="text-body">
               <p className="green"> <strong> MPowered Entrepreneurship </strong> </p>
               <div className="subtitle">
-                <strong> Startup High School Project, <em>Fall 2018 - Present</em></strong>
+                <strong> Startup High School Project, <em>September 2018 - April 2019</em></strong>
               </div>
                 <p> Ann Arbor, MI </p>
                 <p>
-                  I am on the Startup High School team on MPowered; we are organizing
+                  I was on the Startup High School team on MPowered; we organized
                   a pitch competition held on UMich campus (Ross School of Business)
-                  for high schoolers. My focus is on getting sponsors for the event.
+                  for high schoolers. My focus was on getting sponsors for the event.
                 </p>
-            </div>
-            </ScrollAnimation>
-          </div>
-
-          <div className="item-container">
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOnce={true}
-            >
-            <a href="https://www.180dcmichigan.com/" target="_blank" rel="noopener noreferrer" className="img-background">
-              <div className="imgbox">
-                <img className="one80" src={one80DC} alt="180 Degree"></img>
-              </div>
-            </a>
-            </ScrollAnimation>
-            <ScrollAnimation
-              animateIn="fadeIn"
-              animateOnce={true}
-            >
-            <div className="text-body">
-              <p className="green"> <strong> 180 Degree Consulting </strong> </p>
-              <div className="subtitle">
-                <strong> Business Analyst, <em>Winter 2018 - Present</em></strong>
-              </div>
-              <div className="item-text">
-                <p> Ann Arbor, MI </p>
-                <p>
-                  I am a Business Analyst for 180 Degree Consulting at Michigan.
-                  I'm very excited to develop the business skills I will need to
-                  launch my own tech startup!
-                </p>
-              </div>
             </div>
             </ScrollAnimation>
           </div>
@@ -170,7 +201,7 @@ class Work extends Component {
 class Projects extends Component {
   render() {
     return (
-      <div className="gray-green">
+      <div className="gray-green extra-bottom-pad">
         <h2 className="centered top-pad top-buffer green line-green side-padding">
           What I've Done in My Spare Time
         </h2>
@@ -249,6 +280,74 @@ class Projects extends Component {
   }
 }
 
+class Classes extends Component {
+  render() {
+    return (
+      <div className="muted-green small-bottom-pad">
+        <h2 className="centered top-pad line side-padding">
+          Relevant Courses So Far
+        </h2>
+        <div className="vertical-flex small-top-buffer">
+          <div className="horizontal-flex">
+
+            <div className="card less-width small-padding">
+              <small>Winter 2019, EECS 280</small>
+              <h3>
+                <span> Introduction to Programming and Data Structures </span>
+                <p className="proj">
+                  Required for a CS major. Did a CV project, a Euchre project,
+                  postfix calculator project, and sentiment analysis machine learning
+                  project. Worked with stacks, linked lists and trees.
+                </p>
+              </h3>
+            </div>
+
+            <div className="card less-width small-padding">
+              <small>Winter 2019, Math 465</small>
+              <h3>
+                <span> Introduction to Combinatorics </span>
+                <p className="proj">
+                  Fulfills the discrete math requirement for a CS major, and
+                  counts towards Mathematics minor. Learned fundamental
+                  concepts of combinatorics, including Pigeonhole Principle,
+                  Generating Functions, and Catalan Numbers.
+                  Also learned introductory Graph Theory.
+                </p>
+              </h3>
+            </div>
+
+            <div className="card less-width small-padding">
+              <small>Winter 2019, Math 215</small>
+              <h3>
+                <span> Multivariable Calculus </span>
+                <p className="proj">
+                  Fulfills one of the math requirements for a CS major.
+                  Standard Multivariable Calculus curriculum, covering
+                  Double and Triple Integrals, Vector Fields, Green's Theorem,
+                  and Divergence Theorem, and Stoke's Theorem.
+                </p>
+              </h3>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
+class Hobbies extends Component {
+  render() {
+    return (
+      <div className="grad">
+        <h2 className="centered top-pad line side-padding green line-green">
+          I also like to have fun!
+        </h2>
+      </div>
+    )
+  }
+}
+
 class Footer extends Component {
   render() {
     return (
@@ -291,6 +390,8 @@ class App extends Component {
         <Top />
         <Work />
         <Projects />
+        <Classes />
+        <Hobbies />
         <Footer />
       </div>
     );

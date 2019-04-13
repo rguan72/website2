@@ -144,6 +144,18 @@
   background-color: #e5ece5cc;
 }
 
+.blue {
+  background-color: #2765b6;
+}
+
+.muted-green {
+  background-color: #bde0bdcc;
+}
+
+.grad {
+  background-image: radial-gradient(#00d2ff, #3a7bd5);
+}
+
 .line-green:after {
   content: "";
   display: block;
@@ -152,6 +164,7 @@
   padding-bottom: 1.5vh;
   border-bottom: 2px solid #009933;
 }
+
 .underline {
   text-decoration: underline;
 }
@@ -177,12 +190,40 @@
   box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 
+.less-width {
+  max-width: 25%;
+}
+
+.horizontal-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+}
+
+.vertical-flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 .proj {
   font-size: 2.4vh;
 }
 
 .extra-bottom {
   margin-bottom: 3vh;
+}
+
+.extra-bottom-pad {
+  padding-bottom: 8.25vh;
+}
+
+.small-bottom-pad {
+  padding-bottom: 5vh;
+}
+
+.small-padding {
+  padding: 2vw 2vw 1vw 2vw;
 }
 
 .float-right {
@@ -355,6 +396,9 @@ b {
     width: 80vw;
   }
 
+  .img-85 {
+    max-width: 85%;
+  }
   .card {
     max-width: 80%;
   }
