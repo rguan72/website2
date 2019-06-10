@@ -11,6 +11,7 @@ import linkedin from './img/linkedin.png';
 import github from './img/github.png';
 import resume from './img/resume.pdf';
 import croma from './img/croma.png';
+import larky from './img/larky.png';
 
 
 class Top extends Component {
@@ -48,7 +49,7 @@ class Work extends Component {
               animateOnce={true}
             >
             <div className="text-body">
-              <p className="green"> <strong> University of Michigan '21 </strong> </p>
+              <p className="green"> <strong> University of Michigan '22 </strong> </p>
               <div className="subtitle">
                 <strong> Computer Science Major, <em> September 2018 - Present </em> </strong>
               </div>
@@ -57,10 +58,39 @@ class Work extends Component {
                 <p>
                   I'm a CS major and Mathematics minor at the University of Michigan.
                   At Michigan, I am surrounded by hard-working and entrepreneurially
-                  minded peers who are teaching me how to hustle and learn efficiently. My Math 465
-                  and EECS 280 professors have both inspired me.
+                  minded peers who inspire me to hustle and learn efficiently. 
                 </p>
               </div>
+            </div>
+            </ScrollAnimation>
+          </div>
+
+          <div className="item-container">
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
+            <a href="http://info.larky.com/nudge" target="_blank" rel="noopener noreferrer" className="img-background">
+              <div className="imgbox">
+                <img className="res-img img-85" src={larky} alt="Larky"></img>
+              </div>
+            </a>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              animateOnce={true}
+            >
+            <div className="text-body">
+              <p className="green"> <strong> Software Engineering Intern </strong> </p>
+              <div className="subtitle">
+                <strong> Larky, <em> May 2018 - Present </em></strong>
+              </div>
+                <p> Ann Arbor, MI </p>
+                <p>
+                  Larky develops a push notifications library for financial institutions.
+                  I'm working with React and Flask to add core functionality to the dashboard
+                  clients use to schedule notifications and Java to build out our Android library.
+                </p>
             </div>
             </ScrollAnimation>
           </div>
@@ -88,8 +118,8 @@ class Work extends Component {
                 <p> Ann Arbor, MI </p>
                 <p>
                   As a member of the CRO+MA lab, I am part of the DevEdu team;
-                  we are building tools to better educate software developers.
-                  My role is to develop the backend with Node.js and Express.js.
+                  we are conducting research to develop tools for students to 
+                  write more readable code.
                 </p>
             </div>
             </ScrollAnimation>
@@ -119,10 +149,9 @@ class Work extends Component {
                 <p>
                   As a member of the Software Infrastructure and Strategy team on Solar Car,
                   I added features to a Django-based web training team strategists for the World Solar Challenge.
-                  Since my best language is Python, my focus was on the back end,
-                  although I also spent a considerable amount of time on the front end (Javascript, HTML/CSS).
-                  Using Electron, I am also making a desktop app with Javascript/HTML/CSS to display solar car
-                  telemetry in the clearest way possible.
+                  My focus was on the Python-based back end, although I also spent a considerable amount of time on the front end (Javascript, HTML/CSS).
+                  I made an Electron based desktop app to display solar car
+                  telemetry.
                 </p>
             </div>
             </ScrollAnimation>
@@ -201,8 +230,8 @@ class Work extends Component {
 class Projects extends Component {
   render() {
     return (
-      <div className="gray-green extra-bottom-pad">
-        <h2 className="centered top-pad top-buffer green line-green side-padding">
+      <div className="gray-green">
+        <h2 className="centered top-pad-sm green line-green side-padding">
           What I've Done in My Spare Time
         </h2>
         <div className="overall-container">
@@ -283,11 +312,11 @@ class Projects extends Component {
 class Classes extends Component {
   render() {
     return (
-      <div className="muted-green small-bottom-pad">
-        <h2 className="centered top-pad line side-padding">
+      <div className="gray-green small-top-buffer">
+        <h2 className="centered top-pad green line-green side-padding">
           Relevant Courses So Far
         </h2>
-        <div className="vertical-flex small-top-buffer">
+        <div className="vertical-flex pad-2 no-pad-b small-top-buffer">
           <div className="horizontal-flex">
 
             <div className="card less-width small-padding">
@@ -322,9 +351,21 @@ class Classes extends Component {
                 <span> Multivariable Calculus </span>
                 <p className="proj">
                   Fulfills one of the math requirements for a CS major.
-                  Standard Multivariable Calculus curriculum, covering
+                  Curriculum covered
                   Double and Triple Integrals, Vector Fields, Green's Theorem,
                   and Divergence Theorem, and Stoke's Theorem.
+                </p>
+              </h3>
+            </div>
+
+            <div className="card less-width small-padding">
+              <small>Fall 2018, Math 214</small>
+              <h3>
+                <span> Linear Algebra </span>
+                <p className="proj">
+                  Fulfills one of the math requirements for a CS major.
+                  Curriculum covered linear transformations, rank-nullity theorem, 
+                  orthogonality, eigenvectors, and PCA.
                 </p>
               </h3>
             </div>
@@ -367,7 +408,6 @@ class Footer extends Component {
               <a href="mailto:guanr@umich.edu" target="_blank" rel="noopener noreferrer">
                 <img src={envelope} alt="" className="mail"></img>
               </a>
-              {/* // <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> */}
             </div>
           </div>
           <div className="right-box">
@@ -389,9 +429,8 @@ class App extends Component {
       <div>
         <Top />
         <Work />
-        <Projects />
         <Classes />
-        <Hobbies />
+        <Projects />
         <Footer />
       </div>
     );
