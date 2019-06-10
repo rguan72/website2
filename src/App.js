@@ -416,6 +416,11 @@ class Footer extends Component {
                 <strong>Resume</strong>
               </a>
             </h4>
+            <h4>
+              <a className="out-link-2" href="https://medium.com/@rguan72" target="_blank" rel="noopener noreferrer">
+                <strong>Blog</strong>
+              </a>
+            </h4>
           </div>
         </footer>
       </div>
