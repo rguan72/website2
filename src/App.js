@@ -12,6 +12,7 @@ import github from './img/github.png';
 import resume from './img/resume.pdf';
 import croma from './img/croma.png';
 import larky from './img/larky.png';
+import external_link from './img/link-external.png';
 
 
 class Top extends Component {
@@ -412,13 +413,15 @@ class Footer extends Component {
           </div>
           <div className="right-box">
             <h4>
-              <a className="out-link-2" href={resume} target="_blank" rel="noopener noreferrer">
+              <a className="external-link out-link-2" href={resume} target="_blank" rel="noopener noreferrer">
                 <strong>Resume</strong>
+                <img src={external_link} alt="link" className="ml-1"></img>
               </a>
             </h4>
             <h4>
-              <a className="out-link-2" href="https://medium.com/@rguan72" target="_blank" rel="noopener noreferrer">
+              <a className="external-link out-link-2" href="https://medium.com/@rguan72" target="_blank" rel="noopener noreferrer">
                 <strong>Blog</strong>
+                <img src={external_link} alt="link" className="ml-1"></img>
               </a>
             </h4>
           </div>
