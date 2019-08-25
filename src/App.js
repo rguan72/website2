@@ -50,7 +50,7 @@ class Work extends Component {
               animateOnce={true}
             >
             <div className="text-body">
-              <p className="green"> <strong> University of Michigan '22 </strong> </p>
+              <p className="green"> <strong> University of Michigan '21 </strong> </p>
               <div className="subtitle">
                 <strong> Computer Science Major, <em> September 2018 - Present </em> </strong>
               </div>
@@ -237,8 +237,29 @@ class Projects extends Component {
         </h2>
         <div className="overall-container">
 
+        <div className="card">
+            <small>July 2019 - August 2019</small>
+            <h3>
+              <span> StoreBack </span>
+              <span className="float-right">
+                <a href="https://github.com/rguan72/StoreBack" target="_blank" rel="noopener noreferrer">
+                  <img src={github} className="github" alt="Repo"></img>
+                </a>
+              </span>
+              <p className="proj">
+                Creating your own online store can give you full control over your business's 
+                platform, but it can be a hassle for if you don't have backend experience. StoreBack
+                solves this problem by creating a backend for an online store and exposing it
+                with a REST API to CRUD users, merchants, inventory, and more. 
+              </p>
+              <b>
+                API for online stores.
+              </b>
+            </h3>
+          </div>
+
           <div className="card">
-            <small>September 2018 - Present</small>
+            <small>September 2018 - December 2018</small>
             <h3>
               <span> SnapCal </span>
               <span className="float-right">
@@ -319,6 +340,38 @@ class Classes extends Component {
         </h2>
         <div className="vertical-flex pad-2 no-pad-b small-top-buffer">
           <div className="horizontal-flex">
+
+            <div className="card less-width small-padding">
+              <small>Fall 2019, EECS 281</small>
+              <h3>
+                <span> Data Structures and Algorithms </span>
+                <p className="proj">
+                  Required for a CS major. Projects include a maze solver, stock market simulator,
+                  and SillyQL. Working with stacks, queues, heaps, trees and more.
+                </p>
+              </h3>
+            </div>
+
+            <div className="card less-width small-padding">
+              <small>Fall 2019, EECS 370</small>
+              <h3>
+                <span> Introduction to Computer Organization </span>
+                <p className="proj">
+                  Required for a CS major. Learning low-level components of computers and
+                  coding projects in C. 
+                </p>
+              </h3>
+            </div>
+
+            <div className="card less-width small-padding">
+              <small>Fall 2019, Stats 412</small>
+              <h3>
+                <span> Introduction to Probability Statistics </span>
+                <p className="proj">
+                  Required for a CS major (as a replacement for Stats 250). 
+                </p>
+              </h3>
+            </div>
 
             <div className="card less-width small-padding">
               <small>Winter 2019, EECS 280</small>
