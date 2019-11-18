@@ -280,6 +280,42 @@ class Projects extends Component {
         </h2>
         <div className="overall-container">
           <div className="card">
+            <small>October 2019 - Present</small>
+            <h3>
+              <span> EngageMe </span>
+              <span className="float-right">
+                <a
+                  href="https://github.com/adrisj7/EngageMe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={github} className="github" alt="Repo"></img>
+                </a>
+              </span>
+              <p className="proj">
+                Lecture recordings can be filled with technical difficulties and
+                tangents, and youtube videos can be filled with annoying intros
+                and sponsorships. EngageMe is a chrome extension that allows
+                viewers to only watch the most important and interesting parts
+                of a video -- it does this by tracking which parts of a video
+                viewers watch, aggregating watch data, and displaying the parts
+                of a video watched by at least 50% of users on the loading bar.
+              </p>
+              <b>Chrome extension for Youtube videos and lecture recordings.</b>
+              <a
+                href="https://chrome.google.com/webstore/detail/engageme/eigjojgngocicpolncmbeijamieaehdp?authuser=4"
+                className="out-link-1 checkout"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Check Out
+              </a>
+            </h3>
+          </div>
+        </div>
+
+        <div className="overall-container">
+          <div className="card">
             <small>July 2019 - August 2019</small>
             <h3>
               <span> StoreBack </span>
